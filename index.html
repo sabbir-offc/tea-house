@@ -20,7 +20,9 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end' : '#F00',
+
                     }
                 }
             }
@@ -35,11 +37,11 @@
 </head>
 
 
-<body class="font-manrope py-6">
-    <header class="container mx-auto mt-16">
+<body class="font-manrope pt-6">
+    <header class="container mx-auto mt-6">
         <!-- Header Section -->
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div>
+            <div class="flex justify-between gap-2 items-center flex-col lg:flex-row px-5">
 
                 <div>
                     <h1 class="text-7xl font-extrabold text-[#1C1C1C]">
@@ -49,10 +51,10 @@
                     <p class="py-6 text-lg font-medium text-[#777777]">Tea and Botanical Solutions Supplier Give Optimum
                         Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn text-white bg-gradient-to-l  to-gradient-start from-gradient-end ">Explore More <i class="fa-solid fa-arrow-right-long -rotate-45"></i></button>
                 </div>
                 <div>
-                    <img src="images/banner.png" class="max-w-sm" />
+                    <img src="images/banner.png" class="" />
                     <!-- rating badge -->
                     <div class="flex items-center gap-3 drop-shadow-md rounded-md bg-white p-5 w-60 -mt-16">
                         <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -70,7 +72,7 @@
 
     <main class="container mx-auto">
         <!-- feature product -->
-        <section class="text-center my-24">
+        <section class="text-center my-24 px-4">
             <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
             <p class="text-base font-normal text-[#777777] lg:max-w-3xl mx-auto mb-12">There are many variations of
                 passages
@@ -165,7 +167,7 @@
 
         <!-- super client section -->
         <section
-            class="container mx-auto flex flex-col lg:flex-row gap-12 my-24 rounded-xl bg-gradient-to-l  to-[#FF8938] from-[#F00] px-16 py-40">
+            class="container mx-auto flex flex-col lg:flex-row gap-12 my-24 rounded-xl bg-gradient-to-l  to-gradient-start from-gradient-end px-16 py-40">
             <div class="flex items-center">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-[#F4F4F4]">
@@ -228,10 +230,10 @@
         <!-- news and event section -->
         <section class="container mx-auto my-24">
             <h2 class="text-5xl font-extrabold text-[#1C1C1C] text-center mb-5">News & Events</h2>
-            <p class="font-medium text-[#777777] text-center lg:w-2/3 m-auto">There are many variations of passages of
+            <p class="px-4 font-medium text-[#777777] text-center lg:w-2/3 m-auto">There are many variations of passages of
                 Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
                 randomised words which don't look even slightly believable. </p>
-                <!-- news container -->
+            <!-- news container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-3 mt-12">
                 <!-- news 1 -->
                 <div class="card w-[365px] pt-5 bg-base-100 border-2 border-[#D2D2D2] ">
@@ -248,7 +250,7 @@
                 </div>
                 <!-- news 2 -->
                 <div class="card w-[365px] pt-5 bg-base-100 border-2 border-[#D2D2D2] ">
-                    <figure><img src="images/news-1.png" alt="News" /></figure>
+                    <figure><img src="images/news-2.png" alt="News" /></figure>
                     <div class="card-body">
                         <h1 class="font-medium text-[#777]">Feb 05, 2027
                         </h1>
@@ -261,7 +263,7 @@
                 </div>
                 <!-- news 3 -->
                 <div class="card w-[365px] pt-5 bg-base-100 border-2 border-[#D2D2D2] ">
-                    <figure><img src="images/news-1.png" alt="News" /></figure>
+                    <figure><img src="images/news-3.png" alt="News" /></figure>
                     <div class="card-body">
                         <h1 class="font-medium text-[#777]">Feb 05, 2027
                         </h1>
@@ -272,12 +274,62 @@
                         <p class="font-bold text-[#1C1C1C]">Learn More</p>
                     </div>
                 </div>
-                
+
             </div>
 
         </section>
     </main>
 
+
+
+    <footer class="px-4 lg:px-48 py-5 lg:py-10 bg-base-200 text-base-content bg-gradient-to-l  to-[#FF00001A] from-[#FF89381A]">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <h1 class="text-xl text-[#494949] font-medium">Ready to get strated?</h1>
+                <button class="btn bg-gradient-to-l  to-gradient-start from-gradient-end text-white">
+                    Get Started
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com" class="bg-transparent outline-none p-3 border-b-2 border-black" />
+                        <button class="btn text-white absolute top-0 right-20 rounded-full bg-gradient-to-l  to-gradient-start from-gradient-end border-none"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-14 text-xs text-center text-[#494949]">
+          <p>© 2027 UIDesign.to - All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
